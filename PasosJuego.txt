@@ -1,0 +1,66 @@
+Pasos juego ahorcado
+
+Oprimir boton juego nuevo
+Mostrar texto bienvenida y texto oprimir p para comenzar y hacer focus al inputtext
+Escoger palabra secreta, mostrar lineas de palabra 
+
+
+Capturar las letras escritas y borrarlas del input
+Preguntar si la letra esta en letras oprimidas
+*Si: Mostrar mensaje que ya fue oprimida
+*No: Guardar en letras oprimidas y preguntar si la letra esta dentro de la palabra secreta
+    *Si: Graficar la letra en las posiciones en las que este dentro de la palabra, guardar en letras adivinadas y pregunto si numero de letras adivinadas es igual a la cantidad de letras de la palabra secreta
+        *Si: Mostrar mensaje gano el juego
+    *No: Preguntar si la cantidad de letras oprimidas es igual al numero partes del dibujo
+        *Si: Mostrar mensaje de perdida del juego
+        *No: Dibujar parte siguiente
+            
+            
+            
+PRUEBA DE ESCRITORIO
+partesDibujo = [
+    [cabeza],[tronco],
+    [brazoI],[brazoD],
+    [piernaI],[piernaD],
+    [cuerda],[union],
+    [poste],[base] ]
+palabraSecreta = AMARILLO
+output: _ _ _ _ _ _ _ _
+
+input: C
+C en letrasOprimidas = [] ?
+letrasOprimidas =[C]
+C en palabraSecreta ?
+letrasOprimidas.lenght == 
+partesDibujo.lenght ?
+output: dibujo partesDibujo[cabeza]
+
+input: A
+A en letrasOprimidas = [C] ?
+letrasOprimidas = [C,A]
+A en palabraSecreta ?
+output: A _ A _ _ _ _ _ 
+letrasAdivinadas = [A]
+letrasAdivinadas.lenght ==
+palabraSecreta.lenght ?
+
+input: C
+C en letrasOprimidas =[C,A] ?
+output: Letra ya fue oprimida
+
+input: M
+M en letrasOprimidas = [C,A] ?
+letrasOprimidas = [C,A,M]
+M en palabraSecreta ?
+output: A M A _ _ _ _ _ 
+letrasAdivinadas = [A,M]
+letrasAdivinadas.lenght ==
+palabraSecreta.lenght ?
+
+input: D
+D en letrasOprimidas = [C,A,M] ?
+letrasOprimidas = [C,A,M,D]
+D en palabraSecreta ?
+letrasOprimidas.lenght == 
+partesDibujo.lenght ?
+output: dibujo partesDibujo[tronco]

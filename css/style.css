@@ -1,0 +1,104 @@
+.encabezado, .piePagina{
+  /*border: 1px solid red;*/
+  height: 140px;
+  width: 100%;
+  background: black;
+  color: #F5F5F5;
+  text-align: center;
+}
+.encabezado h1{
+  margin: 10px 10%;
+  display: inline-block;
+  vertical-align: middle;
+  /*border: 1px solid red;*/
+}
+.encabezado img{
+  height: 120px;
+  /*border: 1px solid green;*/
+}
+.encabezado h2{
+  margin: 0 10%;
+  font-size: x-large;
+  display: inline-block;
+  /*border: 1px solid red;*/
+}
+.cuerpo{
+  background: linear-gradient(grey, black, #8B0000 99%);
+  text-align: center;
+  /*height: 640px;*/
+  /*border: 1px solid red;*/
+}
+.lienzo{
+  margin-top: 20px;
+  background: #FAEBD7;
+  width: 80%;
+  /*height: 400px;*/
+}
+.inputUsu{
+  background: #FAEBD7;
+  /*margin-top: -10px;*/
+  margin-bottom: 20px;
+  width: 80%;
+}
+.inputUsu:focus{
+  outline: none;
+}
+.inputAgrP{
+  margin: 300px 0;
+  width: 80%;
+}
+.listaBtn{
+  width: 80%;
+  /*margin: 10px 5%;*/
+  display: inline-block;
+  margin: 300px 0;
+  /*border: 1px solid blue;*/
+}
+.elemntoLista{
+  margin: 0 10%;
+  width: 120px;
+  display: inline-block;
+  /*border: 1px solid green;*/
+}
+.btnIniJuego{
+  margin-bottom: 20px;
+  height: 40px;
+  width: 120px;
+  background: #8B0000;
+}
+.btnAgrPalabra{
+  margin-bottom: 20px;
+  height: 40px;
+  width: 120px;
+  background: #0000CD;
+  color: #FAEBD7;
+}
+.txtAreaLetras{
+  width: 80%;
+  height: 110px;
+}
+.piePagina ul{
+  position: relative;
+  top: 60px;
+}
+#textoIni, #textoLet{
+  border-color: #000;
+  display: inline-block;
+  background: #000;
+}
+#textoIni:focus, #textoLet:focus{
+  outline: none;
+}
+
+@media screen and (max-width: 690px) {
+  .encabezado h1{
+    margin: 5px 10%;
+  }
+  .encabezado img{
+    height: 90px;
+    /*border: 1px solid green;*/
+  }
+
+}
+
+

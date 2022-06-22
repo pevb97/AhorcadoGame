@@ -1,0 +1,50 @@
+Pantalla bienvenida
+textos = [
+    [Bienvenid@],
+    [Oprima enter],
+    [para iniciar]
+] 
+
+
+divAlto = 6
+divAncho = 2
+
+textos[0]
+posX = htmlAncho/divAncho
+posY = 2*(htmlAlto/divAlto)
+
+textos[1]
+posX = htmlAncho/divAncho
+posY = 3*(htmlAlto/divAlto)
+
+textos[2]
+posX = htmlAncho/divAncho
+posY = 4*(htmlAlto/divAlto)
+
+
+
+Pantalla lineas
+
+posLineas = []
+divAlto = 4
+divAncho = palabra.lenght
+
+espEntreLineas = (htmlAncho/divAncho)/10
+tamLineas = (htmlAncho/divAncho)
+posYLineas = ((htmlAlto/divAlto)*4)/2
+
+for (let i = 0; i < divAncho; i++) {
+    posXIni = ((i*tamLineas) + espEntreLineas)
+    posXFin = (((i+1)*tamLineas) - espEntreLineas)
+    posLineas.push([posXIni, posYLineas, posXFin, posYLineas]);
+}
+
+
+
+Pantalla graficar letras
+
+for (let i = 0; i < divAncho; i++) {
+    posXIni = ((i*tamLineas) + espEntreLineas)
+    posXFin = (((i+1)*tamLineas) - espEntreLineas)
+    posLineas.push([posXIni, posYLineas, posXFin, posYLineas]);
+}
